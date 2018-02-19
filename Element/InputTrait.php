@@ -53,21 +53,4 @@ trait InputTrait
     {
         return ($this->value) ?: '';
     }
-
-    /**
-     * set value to element
-     * @param string $type
-     */
-    public function setType(string $type): void
-    {
-        $this->type = $type;
-    }
-
-    /**
-     * get value of element
-     */
-    public function getType(): string
-    {
-        return ($this->type) ?: '';
-    }
 }

@@ -27,15 +27,4 @@ interface InputInterface
      * get value of element
      */
     public function getValue() : string;
-
-    /**
-     * set value to element
-     * @param string $type
-     */
-    public function setType(string $type) : void;
-
-    /**
-     * get value of element
-     */
-    public function getType() : string;
 }
