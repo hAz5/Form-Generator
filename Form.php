@@ -54,7 +54,7 @@ class Form extends BasicElements
      * add child to form
      * @param $child
      */
-    public function addChild (BasicElements $child)
+    public function addChild ($child) : void
     {
         $this->elements[] = $child;
     }
