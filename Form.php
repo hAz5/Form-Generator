@@ -63,18 +63,18 @@ class Form extends BasicElements
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function formGenerate()
+    public function generate()
     {
         return view('Form::'.$this->view , [
-            'before' => $this->before,
+            'before' => $this->getBefore(),
             'class' => $this->getClass(),
-            'id' => $this->id,
+            'id' => $this->getId(),
             'baseMethod' => $this->baseMethod,
-            'options' => $this->options,
+            'options' => $this->getOptions(),
             'method' => $this->method,
             'csrf' => $this->csrf,
             'elements' => $this->elements,
-            'after' => $this->after
+            'after' => $this->getAfter()
         ]);
     }
 }
