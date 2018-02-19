@@ -5,6 +5,9 @@ namespace Form;
 abstract class BasicElements implements ElementInterface
 {
 
+    /** @var string view of element html */
+    public $view;
+
     /** @var string id of form tag html */
     public $id;
 
@@ -65,12 +68,29 @@ abstract class BasicElements implements ElementInterface
     }
 
     /**
+     * get options opf element
+     * @return string
+     */
+    public function getOptions() : string
+    {
+        return ($this->options) ?: '';
+    }
+    /**
      * set after element
      * @param string $after
      */
     public function setAfter(string $after) : void
     {
         $this->after = $after;
+    }
+
+    /**
+     * get after element
+     * @return string
+     */
+    public function getAfter() : string
+    {
+        return ($this->after) ?: '';
     }
 
     /**
@@ -81,6 +101,14 @@ abstract class BasicElements implements ElementInterface
     {
         $this->before = $before;
     }
+    /**
+     * get before element
+     * @return string
+     */
+    public function getBefore() : string
+    {
+        return ($this->before) ?: '';
+    }
 
     /**
      * @param string $id
@@ -88,5 +116,32 @@ abstract class BasicElements implements ElementInterface
     public function setId(string $id) : void
     {
         $this->id = $id;
+    }
+
+    /**
+     * get id element
+     * @return string
+     */
+    public function getId() : string
+    {
+        return ($this->id) ?: '';
+    }
+
+    /**
+     * get template of element
+     * @return string
+     */
+    public function getTemplate() : string
+    {
+        return 'Form::' . $this->view;
+    }
+
+    /**
+     * set custom view for element
+     * @param $view
+     */
+    public function setTemplate($view) : void
+    {
+        $this->view = $view;
     }
 }
