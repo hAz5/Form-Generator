@@ -26,4 +26,20 @@ class Input extends BasicElements implements InputInterface
             'after' => $this->getAfter()
         ]);
     }
+    /**
+     * set value to element
+     * @param string $type
+     */
+    public function setType(string $type): void
+    {
+        $this->type = $type;
+    }
+
+    /**
+     * get value of element
+     */
+    public function getType(): string
+    {
+        return ($this->type) ?: '';
+    }
 }
