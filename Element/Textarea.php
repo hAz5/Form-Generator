@@ -1,8 +1,8 @@
 <?php
 
-namespace Form\Element;
+namespace tresa02\form_generator\Element;
 
-use Form\BasicElements;
+use tresa02\form_generator\BasicElements;
 
 class Textarea extends BasicElements implements InputInterface
 {
