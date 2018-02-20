@@ -8,5 +8,14 @@
             "email": "claymore0465@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "repositories": [
+        {"type": "composer", "url": "https://repo.packagist.com/htm/"},
+        {"packagist.org": false}
+    ],
+    "autoload": {
+        "psr-4": {
+            "tresa02\form_generator\\": "src/"
+        }
+    },
 }
