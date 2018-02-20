@@ -2,17 +2,32 @@
     "name": "tresa02/form_generator",
     "description": "generate form",
     "license": "MIT",
+    "type": "package",
+    "repositories": [
+        {
+            "type": "package", "url": "https://repo.packagist.com/htm/",
+            "package": {
+                "name": "tresa02/form_generator",
+                "version": "0.9.0",
+                "source": {
+                    "url": "https://github.com/tresa02/formGenerator.git",
+                    "type": "git",
+                    "reference": "0.9.0"
+                }
+            }
+        },
+        {"packagist.org": false}
+
+    ],
     "authors": [
         {
             "name": "tresa02",
             "email": "claymore0465@gmail.com"
         }
     ],
-    "require": {},
-    "repositories": [
-        {"type": "composer", "url": "https://repo.packagist.com/htm/"},
-        {"packagist.org": false}
-    ],
+    "require": {
+        "php": "7.*"
+    },
     "autoload": {
         "psr-4": {
             "tresa02\form_generator\\": "src/"
