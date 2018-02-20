@@ -1,6 +1,6 @@
 <?php
 
-namespace Form;
+namespace tresa02\form_generator;
 
 use Illuminate\Support\ServiceProvider;
 

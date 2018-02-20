@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: a
- * Date: 2/19/18
- * Time: 3:59 PM
- */
 
-namespace Form\Element;
+namespace tresa02\form_generator\Element;
 
 trait InputTrait
 {

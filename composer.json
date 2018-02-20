@@ -1,0 +1,12 @@
+{
+    "name": "tresa02/form_generator",
+    "description": "generate form",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tresa02",
+            "email": "claymore0465@gmail.com"
+        }
+    ],
+    "require": {}
+}
