@@ -1,0 +1,6 @@
+PHP Code Sniffer:
+  script:
+  - composer install --prefer-dist --no-interaction
+  - bin/phpcs -np --ignore=vendor/*,bin/* --extensions=php --standard=vendor/neoscriber/neoscriber-codesniffer/Neoscriber ./
+  only:
+  - branches

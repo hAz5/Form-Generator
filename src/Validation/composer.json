@@ -1,0 +1,42 @@
+{
+  "name": "neoscriber/validation",
+  "description": "Neoscriber Validation Component",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "RasaWeb Developers",
+      "email": "develop@rasa-web.com",
+      "homepage": "http://rasa-web.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "neoscriber/i18n": "dev-master",
+    "neoscriber/filesystem": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~3.7",
+    "neoscriber/neoscriber-codesniffer": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Neo\\Validation\\": "."
+    }
+  },
+  "repositories": [
+    {
+      "packagist": false
+    },
+    {
+      "type": "composer",
+      "url": "https://packages.rasa-web.com/repo/private/"
+    },
+    {
+      "type": "composer",
+      "url": "https://packages.rasa-web.com/repo/packagist/"
+    }
+  ],
+  "config": {
+    "bin-dir": "bin"
+  }
+}

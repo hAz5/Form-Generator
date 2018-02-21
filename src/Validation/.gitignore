@@ -1,0 +1,9 @@
+/vendor
+/bin
+/.idea
+composer.phar
+composer.lock
+*.swp
+*.swo
+TAGS
+.#*
