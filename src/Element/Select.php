@@ -10,7 +10,13 @@ class Select extends BasicElements implements InputInterface
     use InputTrait;
 
     /** @var string $view */
-    public $view = 'textarea';
+    public $view = 'select';
+
+    /** @var array $items */
+    public $items = [];
+
+    /** @var string $options */
+    public $options = '';
 
     /**
      * generate element to html
@@ -25,7 +31,35 @@ class Select extends BasicElements implements InputInterface
            'name' => $this->getName(),
            'value' => $this->getValue(),
            'options' => $this->getOptions(),
+           'items' => $this->getItems(),
            'after' => $this->getAfter()
        ]);
+    }
+
+    public function setItems($items = [])
+    {
+        $this->items = $items;
+    }
+
+    public function getItems()
+    {
+        $optionElement = new Options();
+        foreach ($this->items as $value => $title){
+
+            $optionElement->setOptionsSelected(false);
+            if (is_array($title)) {
+                $optionElement->setTitle($title[0]);
+                $optionElement->setOptionsSelected(true);
+
+            } else {
+                $optionElement->setTitle($title);
+            }
+
+            $optionElement->setValue($value);
+
+            $this->options .= (string) $optionElement;
+        }
+
+        return $this->options;
     }
 }
