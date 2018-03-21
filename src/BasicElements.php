@@ -1,11 +1,11 @@
 <?php
 
-namespace tresa02\form_generator;
+namespace FormGenerator\src;
 
 abstract class BasicElements implements ElementInterface
 {
 
-    /** @var string view of element html */
+    /** @var string $view of element html */
     public $view;
 
     /** @var string id of form tag html */
@@ -133,7 +133,7 @@ abstract class BasicElements implements ElementInterface
      */
     public function getTemplate() : string
     {
-        return 'Form::' . $this->view;
+        return 'FormGenerator::' . $this->view;
     }
 
     /**
@@ -143,5 +143,15 @@ abstract class BasicElements implements ElementInterface
     public function setTemplate($view) : void
     {
         $this->view = $view;
+    }
+
+    public function renderElements()
+    {
+        return $this->generate()->render();
+    }
+
+    public function __toString()
+    {
+        return $this->renderElements();
     }
 }

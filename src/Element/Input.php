@@ -1,7 +1,7 @@
 <?php
-namespace tresa02\form_generator\Element;
+namespace FormGenerator\src\Element;
 
-use tresa02\form_generator\BasicElements;
+use FormGenerator\src\BasicElements;
 
 class Input extends BasicElements implements InputInterface
 {
@@ -42,4 +42,6 @@ class Input extends BasicElements implements InputInterface
     {
         return ($this->type) ?: '';
     }
+
+
 }

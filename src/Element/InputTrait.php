@@ -1,6 +1,6 @@
 <?php
 
-namespace tresa02\form_generator\Element;
+namespace FormGenerator\src\Element;
 
 trait InputTrait
 {

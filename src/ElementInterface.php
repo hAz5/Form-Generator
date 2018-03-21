@@ -1,6 +1,6 @@
 <?php
 
-namespace Form;
+namespace FormGenerator\src;
 
 interface ElementInterface
 {

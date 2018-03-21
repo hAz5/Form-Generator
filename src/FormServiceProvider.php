@@ -1,6 +1,6 @@
 <?php
 
-namespace tresa02\form_generator;
+namespace FormGenerator\src;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,7 +13,7 @@ class FormServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/views','Form');
+        $this->loadViewsFrom(__DIR__ . '/views/','FormGenerator');
     }
 
     /**

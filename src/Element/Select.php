@@ -4,7 +4,7 @@ namespace FormGenerator\src\Element;
 
 use FormGenerator\src\BasicElements;
 
-class Textarea extends BasicElements implements InputInterface
+class Select extends BasicElements implements InputInterface
 {
 
     use InputTrait;
